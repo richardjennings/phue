@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>example</title>
+    </head>
+    <body>
+        <div id="msg1"></div>
+        <div id="msg2"></div>
+        <script src="dist/main.js"></script>
+        <script>
+            phue.component(phue.components.Message, "#msg1", {message: "test1"})
+            phue.component(phue.components.Message, "#msg2", {message: "test2"})
+        </script>
+    </body>
+</html>

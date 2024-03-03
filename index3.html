@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>example</title>
+    </head>
+    <body>
+        <p>Testing</p>
+        <div id="msg1"></div>
+        <p>Testing</p>
+        <div id="msg2"><p>test2</p></div>
+        <p>Testing</p>
+        <div id="msgs"></div>
+        <p>Testing</p>
+        <script src="dist/main.js"></script>
+        <script>
+            phue.component(phue.components.Message, "#msg1", {message:"test1"})
+            phue.ssrComponent(phue.components.Message, "#msg2", {message:"test2"})
+            phue.component(phue.components.Messages, "#msgs", {messages:["test3", "test4"]})
+        </script>
+    </body>
+</html>
